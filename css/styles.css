@@ -451,6 +451,21 @@ img {
   align-items: baseline;
 }
 
+.footer-title .link:hover,
+.footer-title .link:focus {
+  color: var(--accent-color);
+}
+
+.footer-title .link {
+  color: #ffffff;
+
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .footer-logo {
   display: inline-block;
   color: var(--accent-color);
@@ -461,16 +476,6 @@ img {
   font-size: 26px;
   line-height: 1.49;
   margin-bottom: 20px;
-}
-
-.footer-color {
-  color: #ffffff;
-
-  text-decoration: none;
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
 }
 
 .foooter-address-cont {
@@ -689,7 +694,9 @@ img {
   background: #f5f4fa;
   border-radius: 4px;
   border: 0;
-  transition: box-shadow, background-color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-secondary:hover,
