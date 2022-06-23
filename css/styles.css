@@ -552,7 +552,7 @@ img {
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
-  color: var(--banner-color);
+  color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--banner-color);
@@ -910,9 +910,17 @@ img {
   border-bottom: 1px solid var(--accent-color);
 }
 
-.modal-check:checked + .modal-custom {
+.modal-check:hover + .modal-custom {
   border: 2px solid var(--accent-color);
   background-color: var(--accent-color);
+}
+
+.modal-check:focus + span::before {
+  border-color: var(--accent-color);
+}
+
+.modal-check:focus + .modal-policy-text::before {
+  color: var(--accent-color);
 }
 
 .modal-check:hover + .modal-policy-text::before {
